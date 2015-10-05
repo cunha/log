@@ -15,10 +15,10 @@
 
 #include <inttypes.h>
 
-#define LOG_FATAL 1
-#define LOG_DEBUG 5
+#define LOG_FATAL 10
 #define LOG_WARN 50
 #define LOG_INFO 100
+#define LOG_DEBUG 500
 #define LOG_EXTRA 1000
 
 /* This function initializes the global logger.  The parameter =verbosity=
