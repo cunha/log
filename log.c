@@ -57,9 +57,10 @@ void loge(unsigned verbosity, const char *file, int lineno)
 	if(!cyc) return;
 	if(verbosity > log_verbosity) return;
 	if(!errno) return;
+	int saved = errno;
 	if(!cyc_printf(cyc, "%s:%d: strerror: %s\n", file, lineno,
 			strerror(errno))) log_error(__FILE__, __LINE__);
-	errno = 0;
+	errno = saved;
 }
 
 void logea(const char *file, int lineno, const char *msg)
