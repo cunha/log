@@ -21,7 +21,7 @@
 #define LOG_DEBUG 500
 #define LOG_EXTRA 1000
 
-#define LOGE_GOTO(x) { loge(LOG_WARN, __FILE__, __LINE__); goto x; }
+#define LOGE_GOTO(label) { loge(LOG_WARN, __FILE__, __LINE__); goto label; }
 
 /* This function initializes the global logger.  The parameter =verbosity=
  * specifies what gets printed; calls to =logd=, =loge=, and =logea= with lower
