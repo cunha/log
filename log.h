@@ -10,8 +10,7 @@
  * This code is copyrighted by Italo Cunha (cunha@dcc.ufmg.br) and released
  * under the latest version of the GPL. */
 
-#ifndef __LOG_HEADER__
-#define __LOG_HEADER__
+#pragma once
 
 #include <inttypes.h>
 
@@ -53,5 +52,3 @@ void logea(const char *file, int lineno, const char *msg)
 /* This function returns a nonzero value if its =verbosity= value is lower than
  * that passed to =log_init=. */
 int log_true(unsigned verbosity);
-
-#endif

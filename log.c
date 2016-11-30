@@ -1,3 +1,5 @@
+#include "log.h"
+
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
@@ -6,7 +8,6 @@
 extern int errno;
 
 #include "cyc.h"
-#include "log.h"
 
 /*****************************************************************************
  * static variables
